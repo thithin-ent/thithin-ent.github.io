@@ -1,1 +1,1 @@
-# g_slam 및 cartographer
+# gmaping 및 cartographer
