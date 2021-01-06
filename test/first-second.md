@@ -3,6 +3,6 @@
 $$
 \begin{aligned}
   1+1=3 \\
-  \int(x)
+  \int_{0}^{5} x
 \end{aligned}
 $$
