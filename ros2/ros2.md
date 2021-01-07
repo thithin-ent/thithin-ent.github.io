@@ -27,6 +27,7 @@ sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.or
 ```
 
 ## ROS 툴, 개발 툴 설치
+설치 가이드에서 installing 항목과 building 항목의 다른 곳 입니다. install의 경우 
 ```
 sudo apt update && sudo apt install -y \
   build-essential \
