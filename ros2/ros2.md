@@ -1,6 +1,6 @@
 # ros2 설치
 
-> ROS2를 공부하면서 ROS2 설치에 관련하여 올리는 페이지 입니다. 현 페이지에 나와있는 내용은 모두 - https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Development-Setup/ 에서 확인 가능합니다. 또한, 우분투 16.04, 18.04의 경우 Dashing, 20.04의 경우 Foxy 버전을 사용하여야 합니다.
+> ROS2를 공부하면서 ROS2 설치에 관련하여 올리는 페이지 입니다. 현 페이지에 나와있는 내용은 모두 [https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Development-Setup/](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Development-Setup/) 에서 확인 가능합니다. 또한, 우분투 16.04, 18.04의 경우 Dashing, 20.04의 경우 Foxy 버전을 사용하여야 합니다.
 
 ## locale 설정
 
