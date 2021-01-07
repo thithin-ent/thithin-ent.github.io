@@ -27,7 +27,6 @@ sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.or
 ```
 
 ## ROS 툴, 개발 툴 설치
-설치 가이드에서 installing 항목과 building 항목의 다른 곳 입니다. install의 경우 
 ```
 sudo apt update && sudo apt install -y \
   build-essential \
@@ -63,4 +62,7 @@ sudo apt install --no-install-recommends -y \
 # install Cyclone DDS dependencies
 sudo apt install --no-install-recommends -y \
   libcunit1-dev
+```
+```note
+설치 항목에서 install 항목과 building항목이 나뉘어져 있는것을 확인할 수 있는데, 이는 개발 도구를 사용자가 설정 하느냐 안하느냐의 차이입니다. ROS2를 시작하는 단계에서는 어떤 방법을 사용하든 무방한것으로 보입니다.
 ```
