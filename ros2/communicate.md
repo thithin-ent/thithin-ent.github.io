@@ -1,1 +1,1 @@
-## ros2 통신
+## ros2 node
