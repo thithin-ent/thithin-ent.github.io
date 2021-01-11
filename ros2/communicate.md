@@ -75,3 +75,4 @@ ros2 node info /talker
 
 ## ROS1과 다른 점?
 ROS1과 다른 점으로는 
+![이미지이름]()
