@@ -76,6 +76,11 @@ ros2 node info /talker
 ## ROS1과 다른 점?
 ROS1과 다른 점중 하나로 마스터와 파라미터 서버가 다른 위치에 존재한다는 것입니다.
 
-![이미지이름](/ros2/image.png)
+![ros1](/ros2/image.png)
 
 다음 그림과 같이 ROS1은 ROS Master가 노드간의 정보를 관리하고 통신을 관리하게 됩니다. 또한 ROS parameter server에서 노드들의 파라미터를 관리하도록 되어 있습니다. Master와 parameter server 노드는 roscore를 통해 실행되었습니다. 이 때문에 ROS Master에 문제가 생기는 경우 전체 시스템을 사용하지 못하는 문제점이 있었습니다.
+
+![ros2](/ros2/Nodes-TopicandService.gif)
+
+이와 같은 문제점으로 인해 ROS2에서는 master가 사라지고 parameter server는 각 노드안에서 개별적으로 관리하게 되었습니다. 그 덕분에 parameter가 충돌하거나, 전체 시스템을 사용하지 못하는 문제점 이 사라지게 되었습니다. 또한 통신방식 역시 기존의 TCP통신이 아닌 DDS방식으로 보안성을 높였다고는 하는데.... 통신에 대해선 이해가 좀 더 필요할 듯 합니다. 
+이 외에도 기존 ROS와 ROS2의 다른점은 많이 있습니다. Real-Time 지원, roslaunch의 파이썬 지원 등 여러 점이 추가되었고 각 내용들은 천천히 알아보도록 하겠습니다. 
