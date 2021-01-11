@@ -21,7 +21,7 @@ ros2 run demo_nodes_cpp talker
 . ~/ros2_dashing/install/local_setup.bash
 ros2 run demo_nodes_py listener
 ```
-구독자와 발행자 둘다 각각의 노드로서 기능을 합니다. 만약 노드의 이름을 확인하기 위해선 `node list;`를 확인합니다.
+구독자와 발행자 둘다 각각의 노드로서 기능을 합니다. 만약 노드의 이름을 확인하기 위해선 `node list`를 확인합니다.
 ```
 ros2 node list
 ```
@@ -51,7 +51,7 @@ ros2 run demo_nodes_cpp listener __node:=listener2
 ```
 ros2 node info <node_name>
 ```
-예를 들어 `talker;`노드의 정보를 알아보고자 한다면 다음과 같은 명령어를 실행시킵니다.
+예를 들어 `talker`노드의 정보를 알아보고자 한다면 다음과 같은 명령어를 실행시킵니다.
 ```
 ros2 node info /talker
 ```
