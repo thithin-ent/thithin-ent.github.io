@@ -3,7 +3,7 @@ sort: 2
 ---
 
 # ros2 node
-> ros2의 노드와 관련된 이론을 정리한 페이지 입니다. 토픽, 서비스 등과 같이 노드 사이의 통신 역시 정리하였습니다. 모든 내용은 [https://index.ros.org/doc/ros2/Tutorials/Understanding-ROS2-Nodes/#ros2nodes](https://index.ros.org/doc/ros2/Tutorials/Understanding-ROS2-Nodes/#ros2nodes)을 참고하였습니다.
+> ros2의 노드와 관련된 이론을 정리한 페이지 입니다. 토픽, 서비스 등과 같이 노드 사이의 통신 역시 정리하였습니다. 모든 내용은 [https://index.ros.org/doc/ros2/Tutorials/Understanding-ROS2-Nodes/#ros2nodes](https://index.ros.org/doc/ros2/Tutorials/Understanding-ROS2-Nodes/#ros2nodes)을 참고하였습니다. 또한 그림의 경우[ROS History](http://www.slideshare.net/yoonseokpyo/20160406-ros-1-for)을 참고하였습니다.
 
 ## node 
 
@@ -74,7 +74,8 @@ ros2 node info /talker
 ```
 
 ## ROS1과 다른 점?
-ROS1과 다른 점으로는 마스터가 다른 위치에 존재한다는 것입니다.
-
+ROS1과 다른 점중 하나로 마스터와 파라미터 서버가 다른 위치에 존재한다는 것입니다.
 
 ![이미지이름](/ros2/image.png)
+
+다음 그림과 같이 ROS1은 ROS Master가 노드간의 정보를 관리하고 통신을 관리하게 됩니다. 또한 ROS parameter server에서 노드들의 파라미터를 관리하도록 되어 있습니다. Master와 parameter server 노드는 roscore를 통해 실행되었습니다. 이 때문에 ROS Master에 문제가 생기는 경우 전체 시스템을 사용하지 못하는 문제점이 있었습니다.
