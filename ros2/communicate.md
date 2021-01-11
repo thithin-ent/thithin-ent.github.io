@@ -74,5 +74,4 @@ ros2 node info /talker
 ```
 
 ## ROS1과 다른 점?
-ROS1과 다른 점
-ros
+ROS1과 다른 점으로는 
