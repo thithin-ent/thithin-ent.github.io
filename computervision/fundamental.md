@@ -11,7 +11,7 @@ udacity self driving car에서는 차선을 인식하기 위한 정보로 크게
 
 ## 색상
 
-<img src="/computervision/RGB.jpeg"  width="700" height="370">
+<img src="/computervision/RGB.jpeg"  width="400" height="400">
 
 카메라로 이미지를 받아 처리할때 컴퓨터는 이미지를 RGB로 처리하게 됩니다. 이미지는 가로 * 세로의 크기를 가지고 Red, Green, Blue의 정보를 담은 배열로 나타내어 집니다. 
 이 중 차선 (보통의 경우 흰색이므로  (255,255,255)) 과 비슷한 수치에 해당하는 RGB 값을 추출하여 차선을 인식하게 됩니다.
