@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# ros2 node - 1
+# ros2 node
 > ros2의 노드와 관련된 이론을 정리한 페이지 입니다. 토픽, 서비스 등과 같이 노드 사이의 통신 역시 정리하였습니다. 모든 내용은 [https://index.ros.org/doc/ros2/Tutorials/Understanding-ROS2-Nodes/#ros2nodes](https://index.ros.org/doc/ros2/Tutorials/Understanding-ROS2-Nodes/#ros2nodes)을 참고하였습니다.
 
 ## node 
@@ -73,4 +73,6 @@ ros2 node info /talker
     /talker/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
 ```
 
-
+## ROS1과 다른 점?
+ROS1과 다른 점
+ros
