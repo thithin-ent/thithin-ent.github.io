@@ -75,4 +75,4 @@ ros2 node info /talker
 
 ## ROS1과 다른 점?
 ROS1과 다른 점으로는 
-![이미지이름](https://github.com/thithin-ent/thithin-ent.github.io/tree/main/ros2)
+![이미지이름](https://github.com/thithin-ent/thithin-ent.github.io/tree/main/ros2/image.png)
