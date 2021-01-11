@@ -74,5 +74,7 @@ ros2 node info /talker
 ```
 
 ## ROS1과 다른 점?
-ROS1과 다른 점으로는 
+ROS1과 다른 점으로는 마스터가 다른 위치에 존재한다는 것입니다.
+
+
 ![이미지이름](/ros2/image.png)
