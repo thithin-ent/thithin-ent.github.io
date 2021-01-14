@@ -14,3 +14,25 @@ sort: 2
 
 그러나 카메라 고정 거치대 자체는 로봇의 몸체 좌표계를 따라갑니다. 로봇은 고정 좌표계에서 x, y 병진운동 + z축 회전운동이 가능합니다. 그럼 .... 카메라 고정고치대는 z축 병진운동 + y축 회전운동이 가능하여야 겠군요. 그럼 기본형을 2축 로봇팔의 형태를 가진 거치대로 생각하고 설계하도록 하겠습니다.
 
+## 2차원 변환 
+
+$$
+\begin{aligned}
+  \left( \begin{array}{c}
+      x_1 \\
+      y_1 \\
+      1
+    \end{array} \right)
+   =
+    \left( \begin{array}{c}
+      cos(\phi) & -sin(\phi) & m \\
+      sin(\phi) & cos(\phi) & n \\
+      0 & 0 & 1 
+    \end{array} \right)
+    \left( \begin{array}{c}
+      x\\
+      y\\
+      1
+    \end{array} \right)
+\end{aligned}
+$$
