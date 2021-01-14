@@ -16,7 +16,7 @@ udacity self driving car에서는 차선을 인식하기 위한 정보로 크게
 
 ## 색상
 
-<img src="/computervision/RGB.jpeg"  width="400" height="400">
+<img src="/computervision/config/RGB.jpeg"  width="400" height="400">
 
 카메라로 이미지를 받아 처리할때 컴퓨터는 이미지를 RGB로 처리하게 됩니다. 이미지는 가로 * 세로의 크기를 가지고 Red, Green, Blue의 정보를 담은 배열로 나타내어 집니다. 
 이 중 차선 (보통의 경우 흰색이므로  (255,255,255)) 과 비슷한 수치에 해당하는 RGB 값을 추출하여 차선을 인식하게 됩니다.
@@ -42,7 +42,7 @@ gradient값이란, 픽셀값 변화의 기울기를 뜻합니다.
 
 gradient 값을 찾은 경우, 사용자가 설정한 값에 따라 edge를 결정합니다.
 
-<img src="/computervision/canny.jpeg"  width="500" height="350">
+<img src="/computervision/config/canny.jpeg"  width="500" height="350">
 
 그림과 같이 사용자가 최대수치와 최소수치를 정하게 되는데, 최대수치 이상의 gradient값 인 경우 edge로 보고, 최소수치 이하인 경우 edge에서 제외시킵니다. 그후 최대와 최소값 사이의 gradient값은 최대 수치 이상의 gradient값과 연결되어 있는 경우 edge로 보게 됩니다.
 
@@ -50,7 +50,7 @@ gradient 값을 찾은 경우, 사용자가 설정한 값에 따라 edge를 결�
 
 허프 변환은 차선을 쉽게 찾기위해 사용됩니다. 보통 차선은 직선의 형태를 가지고 있기에, 카메라로 도로 이미지를 받아온 후 흰색 직선을 찾는 것이 간단한 차선인식의 한 방법입니다. 이때 직선을 찾기 위하여 사용 하는 방법이 허프 변환 입니다.
 
-<img src="/computervision/허프.png" width="600" height="200" >
+<img src="/computervision/config/허프.png" width="600" height="200" >
 
 허프 변환을 쉽게 이해하기 위해 y=mx+b라는 선형 방정식이 있다고 합시다. 이러한 경우 x,y축 상에서 m,b가 상수라 취급하면 기울기 m, y절편 b의 값을 가지는 직선이 생깁니다. 
 그럼 반대로 m,b축을 가지는 좌표계에서 x,y 를 상수로 취급하면 x,y는 점이 됩니다. 그럼 x,y의 한점은 m,b가 변수인 선형 방정식이 됩니다.
