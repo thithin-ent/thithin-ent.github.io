@@ -36,3 +36,61 @@ $$
     \end{array} \right)
 \end{aligned}
 $$
+
+Φ는 기존 좌표에서 다음 좌표의 사이각, (m,n)은 병진 운동량
+
+## 3차원 변환
+
+### 병진 운동
+
+$$
+\begin{aligned}
+    \left( \begin{array}{c}
+      1 & 0 & 0 & x \\
+      0 & 1 & 0 & y \\
+      0 & 0 & 1 & z \\
+      0 & 0 & 0 & 1
+    \end{array} \right)
+\end{aligned}
+$$
+
+### x축 회전 운동 (roll) 
+
+$$
+\begin{aligned}
+    \left( \begin{array}{c}
+      1 & 0 & 0 & 0 \\
+      0 & cos(\phi) & -sin(\phi) & 0 \\
+      0 & sin(\phi) & cos(\phi) & 0 \\
+      0 & 0 & 0 & 1
+    \end{array} \right)
+\end{aligned}
+$$
+
+### y축 회전운동 (pitch)
+
+$$
+\begin{aligned}
+    \left( \begin{array}{c}
+      cos(\phi) & 0 & sin(\phi) & 0 \\
+      0 & 1 & 0 & 0 \\
+      -sin(\phi) & 0 & cos(\phi) & 0 \\
+      0 & 0 & 0 & 1
+    \end{array} \right)
+\end{aligned}
+$$
+
+### z축 회전운동 (yaw)
+
+$$
+\begin{aligned}
+    \left( \begin{array}{c}
+      cos(\phi) & -sin(\phi) & 0 & 0 \\
+      sin(\phi) & cos(\phi) & 0 & 0 \\
+      0 & 0 & 1 & 0 \\
+      0 & 0 & 0 & 1
+    \end{array} \right)
+\end{aligned}
+$$
+
+병진과 회전을 순차적으로 할 경우 차례대로 행렬의 곱을 연산한다. 단, 연산의 순서가 바뀔경우 네번째 열(병진운동) 값이 달라질 수 있다.
