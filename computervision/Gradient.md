@@ -21,7 +21,11 @@ sobel을 알기위해선 먼저 sobel 연산자에 대하여 알아야 합니다
 sobel 연산자가 3* 3만 존재하는 것은 아니나 대표적으로 많이 사용됩니다. 5* 5, 7* 7과 같이 홀수 크기는 모두 사용됩니다. 
 ```
 
-x sobel 연산자를 사용하여 픽셀의 gradient를 계산할 경우 x축(가로)을 기준으로 하는 gradient가 나오게 됩니다. y sobel 연산자를 사용할 경우는 y축(가로)을 기준으로 하는 gradient가 나오게 됩니다. x sobel 연산자를 사용 할 경우는 x축 gradient가 나오고, y sobel 연산자를 사용 할 경우는 y축 gradient가 나오므로 각 수치의 제곱 합의 제곱근을 구하면 해당 픽셀의 gradient값을 구할 수 있습니다.
+픽셀의 gradient를 계산할 때에는 sobel연산자와 픽셀값의 내적으로 gradient가 계산이 됩니다. 간단히 
+
+x sobel 연산자를 사용하여 픽셀의 gradient를 계산할 경우 x축(가로)을 기준으로 하는 gradient가 나오게 됩니다. y sobel 연산자를 사용할 경우는 y축(세로)을 기준으로 하는 gradient가 나오게 됩니다. 
+
+x sobel 연산자를 사용 할 경우는 x축 gradient가 나오고, y sobel 연산자를 사용 할 경우는 y축 gradient가 나오므로 각 수치의 제곱 합의 제곱근을 구하면 해당 픽셀의 gradient값을 구할 수 있습니다.
 
 $$
 \begin{aligned}
