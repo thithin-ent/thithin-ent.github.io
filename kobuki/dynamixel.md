@@ -56,7 +56,7 @@ sudo chmod a+rw /dev/ttyUSB0
 다음 그림과 같이 컨트롤 테이블 및 파라미터를 설정한 후 다시 다이나믹셀을 구동하도록 합니다.
 
 ```note
-다이나믹셀 모델마다 파라미터가 다를 수 있습니다. [e-manual](https://emanual.robotis.com/docs/kr/)을 통해 사용하는 모델의 컨트롤 테이블을 확인할 수 있습니다.
+다이나믹셀 모델마다 파라미터가 다를 수 있습니다. [e-manual](https://emanual.robotis.com/docs/kr/) 을 통해 사용하는 모델의 컨트롤 테이블을 확인할 수 있습니다.
 ```
 
 ## dynamixel ros2
