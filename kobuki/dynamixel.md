@@ -172,8 +172,10 @@ find_package(rclcpp REQUIRED)
 find_package(dynamixel_sdk REQUIRED)
 find_package(dynamixel_workbench_toolbox REQUIRED)
 ```
+```
 add_executable(test_move src/test_move.cpp)
 ament_target_dependencies(test_move rclcpp dynamixel_sdk dynamixel_workbench_toolbox std_msgs)
+```
 ```
 install(TARGETS
   test_move
