@@ -20,7 +20,7 @@ plugins:
 exclude:
   - Makefile
   - CNAME
-  - LICENSE
+#  - LICENSE
   - update.sh
   - Gemfile
   - Gemfile.lock
