@@ -4,6 +4,8 @@ sort: 4
 
 # Advanced Computer-vision
 
+> udacity self driving car의 computer vision 부분을 통해 학습한 내용을 정리한 페이지 입니다.
+
 ## 개요
 
 앞서 gradient와 조감도를 통해 차선을 추출하였습니다. 이제 추출한 차선을 통해 차량의 조향을 제어하기 위한 곡선을 추출할 차례입니다.
