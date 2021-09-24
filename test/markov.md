@@ -46,3 +46,16 @@ p(관측)을 생각해 봅시다. 관측된 데이터를 확률로 나타낸다�
 
 ## 오차
 앞서 localization의 위치는 확률로 나타내어 진다고 하였습니다. 이동, 관측 모두 오차가 발생합니다. 이러한 오차는 가우시안 분포(정규 분포)를 따라 나타나게 됩니다. 
+
+
+$$
+
+\left(\begin{matrix}{}
+-cos(R_\theta) \ \ \   sin(R_\theta) \ \ \ \ \   sin(R_\theta)*m_{1,x}+cos(R_\theta)*m_{1,y}+sin(R_\theta)*R_x-cos(R_\theta)*R_y \ \ \ \ \ \  -cos(R_\theta) \ \ \  sin(R_\theta) \ \ \ 0 \\
+sin(R_\theta) \ \ \  -cos(R_\theta) \ \ \  -cos(R_\theta)*m_{1,x}-sin(R_\theta)*m_{1,y}+cos(R_\theta)*R_x+sin(R_\theta)*R_y \ \ \  -sin(R_\theta) \ \ \  cos(R_\theta) \ \ \ 0 \\ 
+0 \ 0 \ -1 \ 0 \ 0 \ 1
+
+\end{matrix}\right)
+
+$$
+
