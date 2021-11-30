@@ -57,8 +57,6 @@ y=f(x)가 아닌 x=f(y)인 이유는 앞서 2차방정식을 찾을 때, y축을
 
 
 $$
-H_t = 
-
 \left(\begin{matrix}{}
 -cos(R_\theta) &   -sin(R_\theta) &   -sin(R_\theta)*m_{1,x}+cos(R_\theta)*m_{1,y}+sin(R_\theta)*R_x-cos(R_\theta)*R_y &  cos(R_\theta) &  sin(R_\theta) & 0 \\
 sin(R_\theta) & -cos(R_\theta) &  -cos(R_\theta)*m_{1,x}-sin(R_\theta)*m_{1,y}+cos(R_\theta)*R_x+sin(R_\theta)*R_y &  -sin(R_\theta) &  cos(R_\theta) & 0 \\ 
