@@ -53,3 +53,16 @@ y=f(x)가 아닌 x=f(y)인 이유는 앞서 2차방정식을 찾을 때, y축을
 ```note
 곡률 반경을 찾을 때 조심해야 할것은 **픽셀**에서의 곡률반경이 아니라 **실제 도로**에서의 곡률반경을 찾아야 합니다. 그러기 위해선 실제 도로와 픽셀간의 비를 통해 계산해주어야 합니다.
 ```
+
+
+
+$$
+H_t = 
+
+\left(\begin{matrix}{}
+-cos(R_\theta) &   sin(R_\theta) &   sin(R_\theta)*m_{1,x}+cos(R_\theta)*m_{1,y}+sin(R_\theta)*R_x-cos(R_\theta)*R_y &  -cos(R_\theta) &  sin(R_\theta) & 0 \\
+sin(R_\theta) & -cos(R_\theta) &  -cos(R_\theta)*m_{1,x}-sin(R_\theta)*m_{1,y}+cos(R_\theta)*R_x+sin(R_\theta)*R_y &  -sin(R_\theta) &  cos(R_\theta) & 0 \\ 
+0 &  0 & -1 &0& 0& 1
+
+\end{matrix}\right)
+$$
